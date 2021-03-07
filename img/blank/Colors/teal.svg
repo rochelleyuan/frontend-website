@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="106px" height="92px" viewBox="0 0 106 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>teal</title>
+    <g id="Case-Study" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-96.000000, -5908.000000)" id="screens,-style-guide">
+            <g transform="translate(62.000000, 4601.000000)">
+                <g id="colors" transform="translate(34.500000, 1308.000000)">
+                    <g id="teal" transform="translate(0.500000, 0.000000)">
+                        <rect id="Rectangle" stroke="#FFFFFF" fill="#71C0AE" x="0" y="0" width="104" height="90" rx="8"></rect>
+                        <text id="#71C0AE" font-family="MADETommySoft, MADE Tommy Soft" font-size="14" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="23.443" y="50">#71C0AE</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
