@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="104px" height="90px" viewBox="0 0 104 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="97px" height="97px" viewBox="0 0 97 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>red-orange</title>
-    <g id="Case-Study" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-345.000000, -5909.000000)" id="screens,-style-guide">
-            <g transform="translate(62.000000, 4601.000000)">
-                <g id="colors" transform="translate(34.500000, 1308.000000)">
-                    <g id="red-orange" transform="translate(248.500000, 0.000000)">
-                        <rect id="Rectangle-Copy-4" fill="#E75C41" x="0" y="0" width="104" height="90" rx="8"></rect>
-                        <text id="#E75C41" font-family="MADETommySoft, MADE Tommy Soft" font-size="14" font-weight="normal" fill="#FFFFFF">
-                            <tspan x="24.591" y="50">#E75C41</tspan>
-                        </text>
-                    </g>
-                </g>
-            </g>
+    <g id="Mockups" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="red-orange">
+            <circle id="Oval-Copy-5" fill="#E75C41" cx="48.5" cy="48.5" r="48.5"></circle>
+            <text id="#E75C41" font-family="MADETommySoft, MADE Tommy Soft" font-size="14" font-weight="normal" fill="#FFFFFF">
+                <tspan x="20.591" y="53">#E75C41</tspan>
+            </text>
         </g>
     </g>
 </svg>
