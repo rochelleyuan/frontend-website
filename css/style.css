@@ -17,3 +17,90 @@ body {
   src: url('avenir-next/AvenirNext.oet');
   src: url('avenir-next/AvenirNext.ttf')  format('truetype'),
 }
+
+.portfolio.img {
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 1.602em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.424em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.266em;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:visited {
+  color: #4c6d83;
+}
+
+a:hover,
+a:focus {
+  color: #bc9d62;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #7094ac;
+}
+
+/* make sure to put this rule at the END of the doc so it doesn't get overwritten */
+.button {
+  display: inline-block;
+  background-color: #7094ac;
+  color: #ffffff !important;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #bc9d62 /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.7; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.button:active {
+  background-color: #bc9d62;
+}
+
+.button.outline {
+  background-color: transparent;
+  color: #7094ac !important;
+  text-transform: uppercase;
+  border: 2px solid #7094ac;
+}
+
+.button.outline:hover {
+  background-color: #7094ac;
+  color: #ffffff !important;
+}
+
+.button.outline:active {
+  background-color: #bc9d62;
+  border: 2px solid #bc9d62;
+}
