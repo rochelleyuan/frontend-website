@@ -15,7 +15,7 @@ body {
 @font-face {
   font-family: 'Avenir Next';
   src: url('avenir-next/AvenirNext-Regular.oet');
-  src: url('avenir-next/AvenirNext-Regular.ttf')  format('truetype'),
+  src: url('avenir-next/AvenirNext-Regular.ttf')  format('truetype');
 }
 
 .portfolio.img {
