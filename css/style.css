@@ -1,8 +1,13 @@
 /*
 Colors used:
-Primary Colors: #ffffff (white) and #333333 (black)
+Primary Colors: #ffffff (white) #333333 (black) #EDEDED (gray)
 Secondary Colors: #7094ac (blue) and #bc9d62 (gold)
 */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
   font-family: 'Avenir Next', sans-serif;
@@ -18,8 +23,20 @@ body {
   src: url('avenir-next/AvenirNext-Regular.ttf')  format('truetype');
 }
 
-.portfolio.img {
+
+header {
+  background-color: #EDEDED;
+  text-align: center;
+  padding: 10px 0;  /* white space within the element's borders */
+  box-shadow: 0px 2px 5px 0px rgba(51, 51, 51, 0.4);
+  position: fixed;
   width: 100%;
+  /* margin: 10px;  white space around the element's borders */
+  /* border-bottom: 2px solid #D1D1D1; */
+}
+
+main {
+  padding-top: 160px;
 }
 
 h1, h2, h3, h4 {
@@ -66,6 +83,35 @@ a:active {
   color: #7094ac;
 }
 
+nav > ul {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #4c6d83;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: #7094ac;
+  text-decoration: underline;
+}
+
+nav > ul > li > a:active {
+  color: #bc9d62;
+  font-weight: 600;
+}
+
 /* make sure to put this rule at the END of the doc so it doesn't get overwritten */
 .button {
   display: inline-block;
@@ -76,6 +122,7 @@ a:active {
   border-radius: 3px;
   border-bottom: 2px solid #bc9d62 /* width of the border, type, color */
   transition: 0.2s opacity;
+  text-align: center;
 }
 
 .button:hover {
@@ -103,4 +150,86 @@ a:active {
 .button.outline:active {
   background-color: #bc9d62;
   border: 2px solid #bc9d62;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1, p {
+  text-align: center;
+}
+
+#hero {
+  background-color: #EDEDED;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#work .row {
+  margin: 25px 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #EDEDED;
+}
+
+#work {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+#work h2, h3, p {
+  text-align: center;
+  color: #333333;
+}
+
+#contact {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #EDEDED;
+}
+
+#about {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+#about .row {
+  margin: 25px 0;
+}
+
+#about .my.story {
+  padding-bottom: 25px;
+}
+
+#blank {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.portfolio.img {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.logo.img {
+  width: 100%;
+}
+
+.logo {
+  padding-top: 10px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.social {
+  padding-top: 30px;
+  max-width: 50px;
+  text-align: center;
 }
