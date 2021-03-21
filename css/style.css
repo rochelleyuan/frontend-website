@@ -23,7 +23,6 @@ body {
   src: url('avenir-next/AvenirNext-Regular.ttf')  format('truetype');
 }
 
-
 header {
   background-color: #EDEDED;
   text-align: center;
@@ -66,7 +65,7 @@ h4 {
 a {
   color: #333333;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 a:visited {
@@ -121,12 +120,12 @@ nav > ul > li > a:active {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #bc9d62 /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition-duration: 0.2s opacity;
   text-align: center;
 }
 
 .button:hover {
-  opacity: 0.7; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
   color: #ffffff;
 }
@@ -196,8 +195,11 @@ nav > ul > li > a:active {
 }
 
 #about {
-  text-align: center;
   padding-bottom: 25px;
+}
+
+#about p, h1, h2, h3 {
+  text-align: left;
 }
 
 #about .row {
@@ -232,4 +234,146 @@ nav > ul > li > a:active {
   padding-top: 30px;
   max-width: 50px;
   text-align: center;
+}
+
+.berlin.illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 110px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  #hero p {
+    text-align: center;
+  }
+
+  #work {
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  #work h2, h3, p, .button {
+    text-align: left;
+    margin-top: 0px;
+  }
+
+  #contact p {
+    text-align: center;
+  }
+
+  #about {
+    text-align: center;
+  }
+
+  #about h1, h2 {
+    text-align: center;
+  }
+
+  #about ul {
+    text-align: left;
+  }
+
+  .col-md-6 { /* col = columns; md = medium devices; 6 = 6-column span */
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding-right: 20px;
+  }
+
+  .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-lg-6 { /* col = columns; ld = large devices; 6 = 6-column span */
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding-right: 20px;
+  }
+
+  .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+}
+
+/* ==============================
+Animation
+================================= */
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 15s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
