@@ -178,12 +178,11 @@ nav > ul > li > a:active {
 }
 
 #work {
-  text-align: center;
   padding-bottom: 25px;
 }
 
 #work h2, h3, p {
-  text-align: center;
+  text-align: left;
   color: #333333;
 }
 
@@ -192,6 +191,10 @@ nav > ul > li > a:active {
   padding-bottom: 10px;
   text-align: center;
   background-color: #EDEDED;
+}
+
+#contact h2 {
+  text-align: center;
 }
 
 #about {
@@ -326,7 +329,7 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
-  .col-lg-6 { /* col = columns; ld = large devices; 6 = 6-column span */
+  .col-lg-7 {
     width: 50%;
   }
 
@@ -341,6 +344,9 @@ Large devices (1024px or larger)
     display: table;
   }
 
+  #about .my.story, h2 {
+    text-align: left;
+  }
 }
 
 /* ==============================
