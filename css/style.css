@@ -25,8 +25,7 @@ body {
 
 header {
   background-color: #EDEDED;
-  text-align: center;
-  padding: 10px 0;  /* white space within the element's borders */
+  padding: 10px 0 0px;  /* white space within the element's borders */
   box-shadow: 0px 2px 5px 0px rgba(51, 51, 51, 0.4);
   position: fixed;
   width: 100%;
@@ -35,7 +34,7 @@ header {
 }
 
 main {
-  padding-top: 160px;
+  padding-top: 90px;
 }
 
 h1, h2, h3, h4 {
@@ -83,14 +82,9 @@ a:active {
 }
 
 nav > ul {
-  display: inline-block;
   list-style-type: none;
   padding: 0;
-  width: 100%;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 1em 0;
 }
 
 nav > ul > li > a {
@@ -229,8 +223,7 @@ nav > ul > li > a:active {
 
 .logo {
   padding-top: 10px;
-  max-width: 250px;
-  text-align: center;
+  max-width: 200px;
 }
 
 .social {
@@ -243,6 +236,37 @@ nav > ul > li > a:active {
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+/* navigation */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(112,148,172,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 /* ==============================
@@ -266,6 +290,10 @@ Medium devices (640px and larger)
 
   body {
     font-size: 18px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
   }
 
   #hero span {
@@ -317,6 +345,9 @@ Medium devices (640px and larger)
     display: table;
   }
 
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 }
 
 /* ==============================
@@ -346,6 +377,15 @@ Large devices (1024px or larger)
 
   #about .my.story, h2 {
     text-align: left;
+  }
+
+  .logo {
+    padding-top: 10px;
+    max-width: 250px;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
   }
 }
 
