@@ -255,14 +255,13 @@ nav > ul > li > a:active {
   padding-right: 0;
 }
 
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
+/* .navtoggle.responsive nav {
+  padding: 0 0 0;
+} */
 
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(112,148,172,0.5);
 }
 
 .navtoggle.responsive li:last-child  {
