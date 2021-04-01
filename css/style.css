@@ -261,7 +261,6 @@ nav > ul > li > a:active {
 
 .navtoggle.responsive li  {
   display: block;
-  padding: 10px 0;
 }
 
 .navtoggle.responsive li:last-child  {
