@@ -255,6 +255,7 @@ nav > ul > li > a:active {
 /* navigation */
 .navtoggle li:not(:last-child) {
   display: none;
+  text-align: right;
 }
 
 .navtoggle, .navtoggle.responsive {
