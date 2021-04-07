@@ -344,9 +344,7 @@ Medium devices (640px and larger)
     text-align: center;
   }
 
-  #about img {
-    margin-left: auto;
-    margin-right: auto;
+  .about_picture {
     text-align: center;
   }
 
@@ -356,10 +354,6 @@ Medium devices (640px and larger)
 
   #about ul {
     text-align: left;
-  }
-
-  .skills_tools {
-    padding-left: 40px;
   }
 
   .my_story {
@@ -389,7 +383,6 @@ Medium devices (640px and larger)
   display: none;
   }
 }
-}
 
 /* ==============================
 Large devices (1024px or larger)
@@ -411,7 +404,7 @@ Large devices (1024px or larger)
 
   [class*="col-"] {
     float: left;
-    padding-right: 95px;
+    padding-right: 20px;
   }
 
   .row:after {
